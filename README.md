@@ -22,6 +22,8 @@ Investors often struggle with making informed decisions due to the overwhelming 
 
 ## 🏗️ Project Architecture
 
+![Flowchart](<images/flowchart.png>)
+
 The system consists of **three primary models**:
 
 1. **📉 Long-Term Price Prediction Model (LSTM)**  
@@ -61,6 +63,9 @@ The system consists of **three primary models**:
 - Trained on **70%** of the dataset, tested on **30%**.  
 - Performance evaluation using **MSE, RMSE, MAE, and R² metrics**.  
 
+![Price Prediction Example](<images/pricepredictionexample.png>)
+![](<images/pricepredictionexample2.png>)
+
 ### **2️⃣ Short-Term Recommendation Model**
 
 #### **(a) News Sentiment Analysis Model**
@@ -69,6 +74,8 @@ The system consists of **three primary models**:
   ✔ **Support Vector Machine (SVM) - Best Model**  
   ✔ **Random Forest (RF)**  
 - **Best performing model:** **SVM with 79.75% accuracy**.  
+
+![Flowchart](<images/newssentimentflowchart.png>)
 
 #### **(b) Technical Indicators Model**
 - Uses four key indicators:  
@@ -83,6 +90,8 @@ The system consists of **three primary models**:
 ### **3️⃣ Model Integration**
 - **Final Recommendation Score = 40% Sentiment Analysis + 60% Technical Indicators**  
 - Weighted combination determines **Buy, Sell, or Hold** signal.  
+
+![Results](<images/integratedresult.png>)
 
 ---
 
